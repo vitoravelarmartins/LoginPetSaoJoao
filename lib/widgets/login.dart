@@ -48,7 +48,7 @@ class _LoginState extends State<Login> {
                       child: RaisedButton(
                         onPressed: () {
                           String resposta = "Login realizado com sucesso";
-                          if (myControllerUser.text != "admin" &&
+                          if (myControllerUser.text != "admin" ||
                               myControllerPass.text != "petsaojoao") {
                             resposta = "Erro! Login NEGADO";
                           }
